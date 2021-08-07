@@ -20,6 +20,6 @@ public interface BooksRepo extends JpaRepository<Books, Long> {
 	@Query(value = "SELECT * from Books", nativeQuery = true)
 	List<Books> findAllSQL();
 
-	List<Books> findBooksByReturnpolicyGreaterThan(String retrunpolicy);
+	List<Books> findBooksByReturnpolicyGreaterThan(String returnpolicy);
 	
 }

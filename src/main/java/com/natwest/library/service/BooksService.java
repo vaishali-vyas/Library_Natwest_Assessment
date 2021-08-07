@@ -43,7 +43,7 @@ public class BooksService {
 		Books exists= this.repo.getById(Id);
 		exists.setCategory(books.getCategory());
 		exists.setAuthor(books.getAuthor());
-		exists.setRetrunpolicy(books.getRetrunpolicy());
+		exists.setReturnpolicy(books.getReturnpolicy());
 		Books updated = this.repo.save(exists);
 		return updated;	
 	

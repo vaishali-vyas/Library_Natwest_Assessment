@@ -17,7 +17,7 @@ public class Books {
 
 	private String category;
 	private String author;
-	private String retrunpolicy;
+	private String returnpolicy;
 	
 	//default constructor
 	
@@ -26,12 +26,12 @@ public class Books {
 	}
 	
 	//all args constructor
-	public Books(long id, String category, String author, String retrunpolicy) {
+	public Books(long id, String category, String author, String returnpolicy) {
 		super();
 		Id = id;
 		this.category = category;
 		this.author = author;
-		this.retrunpolicy = retrunpolicy;
+		this.returnpolicy = returnpolicy;
 	}
 
 // all args except id constructor	
@@ -39,7 +39,7 @@ public class Books {
 		super();
 		this.category = category;
 		this.author = author;
-		this.retrunpolicy = retrunpolicy;
+		this.returnpolicy = retrunpolicy;
 	}
 
 	
@@ -68,17 +68,17 @@ public class Books {
 		this.author = author;
 	}
 
-	public String getRetrunpolicy() {
-		return retrunpolicy;
+	public String getReturnpolicy() {
+		return returnpolicy;
 	}
 
-	public void setRetrunpolicy(String retrunpolicy) {
-		this.retrunpolicy = retrunpolicy;
+	public void setReturnpolicy(String returnpolicy) {
+		this.returnpolicy = returnpolicy;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(Id, author, category, retrunpolicy);
+		return Objects.hash(Id, author, category, returnpolicy);
 	}
 
 	@Override
@@ -91,14 +91,14 @@ public class Books {
 			return false;
 		Books other = (Books) obj;
 		return Id == other.Id && Objects.equals(author, other.author) && Objects.equals(category, other.category)
-				&& Objects.equals(retrunpolicy, other.retrunpolicy);
+				&& Objects.equals(returnpolicy, other.returnpolicy);
 	}
 
 	//generate to string
 	
 	@Override
 	public String toString() {
-		return "Books [Id=" + Id + ", category=" + category + ", author=" + author + ", retrunpolicy=" + retrunpolicy
+		return "Books [Id=" + Id + ", category=" + category + ", author=" + author + ", returnpolicy=" + returnpolicy
 				+ "]";
 	}
 	
