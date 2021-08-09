@@ -7,8 +7,8 @@ var app = new function() {
 	this.FetchAll = function() {
 		var data = '';
 
-		i(this.name.length > 0); {
-			for (i = 0; i < this.name.length; i++) {
+		if (this.name.length > 0) {
+			for (let i = 0; i < this.name.length; i++) {
 				data += '<tr>';
 				data += '<td>' + (i + 1) + '. ' + this.name[i] + '</td>';
 				data += '<td><button onclick="app.Edit(' + i + ')"class="btn btn-warning">Edit>/button></td>';
@@ -22,7 +22,7 @@ var app = new function() {
 
 	this.Add = function() {
 
-		el = document.getElementById('add-booktoreorder');
+		el = document.getElementById('add-author');
 		var name = el.value;
 		if (name) {
 			this.name.push(name.trim());
@@ -40,7 +40,7 @@ var app = new function() {
 
 		document.getElementById('save-edit').onsubmit = function() {
 			var name = el.value;
-			if(name){
+			if (name) {
 				self.name.splice(item, 1, name.trim());
 				self.FetchAll();
 				CloseInput();
@@ -48,18 +48,21 @@ var app = new function() {
 		}
 	};
 
-	this.Delete = function() {
-
+	this.Delete = function(item) {
+		this.name.splice(item, 1)
+		this.FetchAll();
 	};
 
 
 	this.Count = function(data) {
+		
+			}
+		}
+	
 
-	};
 
 
 
-}
 
 app.FetchAll();
 
