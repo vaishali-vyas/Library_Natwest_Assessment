@@ -46,7 +46,6 @@ var app = new function() {
 				CloseInput();
 			}
 		}
-
 	};
 
 	this.Delete = function() {
