@@ -1,21 +1,27 @@
-.title{
+.title {
 	text-align: center;
 	margin-top: 25px;
 }
 
-.form{
-	margin:auto;
+.form {
+	margin: auto;
 	max-width: 80%;
-	text-align: center;	
+	text-align: center;
 }
 
 input[type='submit'], button, [aria-label] {
-	cursor:pointer;
+	cursor: pointer;
 }
 
-#edit-box{
-	display:none;
+#edit-box {
+	display: none;
 	max-width: 80%;
 	margin: auto;
 	margin-top: 10px;
+}
+
+td{
+	background-color: olive;
+	padding-right: 10px;
+	text-align: left;
 }
