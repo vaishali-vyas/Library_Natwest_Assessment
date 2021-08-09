@@ -36,8 +36,16 @@ var app = new function() {
 		el = document.getElementById('edit-booktoreorder');
 		el.value = this.name[item]
 		document.getElementById('edit-box').style.display = 'block';
-		self=this;
+		self = this;
 
+		document.getElementById('save-edit').onsubmit = function() {
+			var name = el.value;
+			if(name){
+				self.name.splice(item, 1, name.trim());
+				self.FetchAll();
+				CloseInput();
+			}
+		}
 
 	};
 
