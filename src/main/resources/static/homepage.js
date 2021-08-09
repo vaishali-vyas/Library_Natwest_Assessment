@@ -33,7 +33,7 @@ var app = new function() {
 	};
 
 	this.Edit = function(item) {
-		el = document.getElementById('edit-booktoreorder');
+		el = document.getElementById('edit-Book List');
 		el.value = this.name[item]
 		document.getElementById('edit-box').style.display = 'block';
 		self = this;
@@ -59,10 +59,6 @@ var app = new function() {
 			}
 		}
 	
-
-
-
-
 
 app.FetchAll();
 
