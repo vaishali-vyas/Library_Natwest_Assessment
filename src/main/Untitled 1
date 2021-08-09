@@ -1,0 +1,14 @@
+Mysql table
+
+use books;
+/*select * from books;*/
+-- INSERT INTO book_table  VALUES (1, 'Fiction', 'Agatha Christie', '14 days');
+-- INSERT INTO book_table  VALUES (2, 'Fiction', 'William Shakespere', '14 days');
+-- INSERT INTO book_table  VALUES (3, 'Fiction', 'Mulk Raj Anand', '14 days');
+-- INSERT INTO book_table  VALUES (4, 'Autobiography', 'MK Gandhi', '10 days');
+-- INSERT INTO book_table  VALUES (5, 'Autobiograpy', 'Bill Gates', '14 days');
+-- INSERT INTO book_table  VALUES (6, 'Science', 'Brian Clegg', '10 days');
+select * from book_table;
+
+
+1	
