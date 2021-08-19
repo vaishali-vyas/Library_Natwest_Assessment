@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps { 
-               sh "git clone https://github.com/vaishali-vyas/Library_Natwest_Assessment.git"
+               sh "git fetch https://github.com/vaishali-vyas/Library_Natwest_Assessment.git"
             }
         }
         stage('Build Jar') {
