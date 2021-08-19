@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run Jar') {
             steps {
-                sh "ls"
+                sh "bash deploy.sh"
             }
         }
     }
