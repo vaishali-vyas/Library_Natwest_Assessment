@@ -1,19 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                echo "Hello There"
+        stage('Clone Repo') {
+            steps { 
+               sh "git clone https://github.com/vaishali-vyas/Library_Natwest_Assessment.git"
             }
         }
-        stage('Test') {
+        stage('Build Jar') {
             steps {
-                echo "I am testing"
+                sh "ls"
+		sh "cd Library_Natwest_Assessment && ls"
             }
         }
-        stage('Deploy') {
+        stage('Run Jar') {
             steps {
-                echo "I am deploying"
+                sh "ls"
             }
         }
     }
